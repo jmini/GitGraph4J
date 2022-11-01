@@ -13,7 +13,7 @@ plugins {
     id 'org.asciidoctor.jvm.convert' version '3.3.2'
     id 'org.ajoberstar.git-publish' version '3.0.1'
     id 'org.ajoberstar.grgit' version '4.1.1'
-    id 'com.diffplug.spotless' version '6.1.0'
+    id 'com.diffplug.spotless' version '6.11.0'
     id 'net.researchgate.release' version '2.6.0'
 }
 
@@ -125,7 +125,7 @@ spotless {
     removeUnusedImports()
 
     // available versions are: https://github.com/diffplug/spotless/tree/master/lib-extra/src/main/resources/com/diffplug/spotless/extra/eclipse_jdt_formatter
-    eclipse('4.13.0').configFile('.settings/org.eclipse.jdt.core.prefs')
+    eclipse('4.21.0').configFile('.settings/org.eclipse.jdt.core.prefs')
   }
 }
 
