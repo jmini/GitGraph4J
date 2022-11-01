@@ -26,7 +26,7 @@ Dot (Graphviz):
 
 image:examples/diag01/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag01/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag01/graph.gv[view source file, view]
 
 
 === diag02
@@ -47,7 +47,7 @@ Dot (Graphviz):
 
 image:examples/diag02/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag02/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag02/graph.gv[view source file, view]
 
 
 === diag03
@@ -68,7 +68,7 @@ Dot (Graphviz):
 
 image:examples/diag03/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag03/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag03/graph.gv[view source file, view]
 
 
 === diag04
@@ -89,7 +89,7 @@ Dot (Graphviz):
 
 image:examples/diag04/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag04/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag04/graph.gv[view source file, view]
 
 
 === diag05
@@ -110,7 +110,7 @@ Dot (Graphviz):
 
 image:examples/diag05/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag05/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag05/graph.gv[view source file, view]
 
 
 === diag06
@@ -131,7 +131,7 @@ Dot (Graphviz):
 
 image:examples/diag06/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag06/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag06/graph.gv[view source file, view]
 
 
 === diag07
@@ -152,7 +152,7 @@ Dot (Graphviz):
 
 image:examples/diag07/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag07/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag07/graph.gv[view source file, view]
 
 
 === diag08
@@ -173,7 +173,7 @@ Dot (Graphviz):
 
 image:examples/diag08/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag08/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag08/graph.gv[view source file, view]
 
 
 === diag09
@@ -194,7 +194,7 @@ Dot (Graphviz):
 
 image:examples/diag09/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag09/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag09/graph.gv[view source file, view]
 
 
 === diag10
@@ -215,7 +215,7 @@ Dot (Graphviz):
 
 image:examples/diag10/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag10/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag10/graph.gv[view source file, view]
 
 
 === diag11
@@ -236,7 +236,7 @@ Dot (Graphviz):
 
 image:examples/diag11/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag11/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag11/graph.gv[view source file, view]
 
 
 === diag12
@@ -257,7 +257,7 @@ Dot (Graphviz):
 
 image:examples/diag12/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag12/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag12/graph.gv[view source file, view]
 
 
 === diag13
@@ -278,7 +278,7 @@ Dot (Graphviz):
 
 image:examples/diag13/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag13/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag13/graph.gv[view source file, view]
 
 
 === diag14
@@ -299,7 +299,7 @@ Dot (Graphviz):
 
 image:examples/diag14/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag14/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag14/graph.gv[view source file, view]
 
 
 === diag15
@@ -320,7 +320,7 @@ Dot (Graphviz):
 
 image:examples/diag15/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag15/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag15/graph.gv[view source file, view]
 
 
 === diag16
@@ -341,5 +341,5 @@ Dot (Graphviz):
 
 image:examples/diag16/graph.gv.png[]
 
-git-link:src/docs/asciidoc/examples/diag16/graph.dot[view source file, view]
+git-link:src/docs/asciidoc/examples/diag16/graph.gv[view source file, view]
 

@@ -104,7 +104,7 @@ class DiagTestUtilTest {
             sb.append("\n");
             sb.append("image:examples/" + name + "/graph.gv.png[]\n");
             sb.append("\n");
-            sb.append("git-link:src/docs/asciidoc/examples/" + name + "/graph.dot[view source file, view]\n");
+            sb.append("git-link:src/docs/asciidoc/examples/" + name + "/graph.gv[view source file, view]\n");
             sb.append("\n");
         }
         String expectedContent = sb.toString();
