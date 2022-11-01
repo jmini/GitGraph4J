@@ -1,0 +1,58 @@
+digraph G {
+    rankdir="LR";
+    bgcolor="white"
+    node[shape=circle; style=filled; fixedsize=true; width=0.25, fontcolor=black, label=""];
+    edge[weight=2, arrowhead=none, color=black];
+
+    node[group="gbox1", color="#9673a6"; fillcolor="#e1d5e7";];
+    f [label="f"];
+    g [label="g"];
+    h [label="h"];
+    i [label="i"];
+    box1[shape=box; style=""; fixedsize=false; label="feature"];
+
+    node[group="gbox2", color="#6c8ebf"; fillcolor="#dae8fc";];
+    a [label="a"];
+    b [label="b"];
+    c [label="c"];
+    d [label="d"];
+    box2[shape=box; style=""; fixedsize=false; label="main"];
+
+    node[group="gbox3", color="#82b366"; fillcolor="#d5e8d4";];
+    l [label="l"];
+    m [label="m"];
+    n [label="n"];
+    o [label="o"];
+    box3[shape=box; style=""; fixedsize=false; label="b3"];
+
+    node[group="gbox4", color="#666666"; fillcolor="#f5f5f5";];
+    u [label="u"];
+    v [label="v"];
+    w [label="w"];
+    x [label="x"];
+    box4[shape=box; style=""; fixedsize=false; label="b4"];
+
+    a -> b
+    b -> l
+    l -> m
+    b -> f
+    m -> u
+    b -> c
+    f -> g
+    u -> v
+    g -> h
+    c -> h
+    c -> d
+    d -> n
+    m -> n
+    n -> w
+    v -> w
+    h -> i
+    d -> i
+    w -> x
+    n -> o
+    i -> box1
+    d -> box2 [style=invis]
+    o -> box3
+    x -> box4
+}

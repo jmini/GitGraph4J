@@ -1,0 +1,139 @@
+:rootdir: ../../..
+:github-readme: {rootdir}/README.adoc
+:srcdir: {rootdir}/src/
+:listing-caption: Listing
+:revdate: {project-builddate}
+:revnumber: {project-version}
+
+include::{github-readme}[tags=vardef]
+
+:projectpage: https://github.com/{gh-repo-owner}/{gh-repo-name}
+
+include::{github-readme}[tags=header]
+
+== URLs
+
+* link:{homepage}[Project home] (this page)
+* link:{projectpage}[GitHub project]
+* link:{issues}[Issue tracker]
+
+TIP: Do you want to improve this page? Please git-link:self[edit it on GitHub, edit].
+
+== Motivation
+
+Drawing Git Diagram is very important to explain a branching model, or how a tool works, or the required commits during a release process.
+
+Drawing such diagrams manually is really boring.
+Especially when you need multiple steps of the same git diagram: you often need to redo the same modifications (like changing a color or a label) on multiple pictures.
+
+The https://www.diagrams.net/[Diagrams.net] (formally Draw.io) project has shared an article about https://www.diagrams.net/blog/gitflow-diagram[how to draw a git flow diagram].
+
+This project automates the creation of such a diagram.
+Instead of drawing you defines your commits and the branches you would like to have and you generate the picture.
+
+In addition the tool also supports additional outputs than draw.io.
+
+== Examples pages
+
+Check the xref:examples.adoc[examples page] to see different possibilities and different outputs.
+
+== Usage
+
+The code shared in this project is a prototype more than a real library.
+
+To use it, the best is to have a look at the tests that creates the images in the git-link:src/docs/asciidoc/examples/[examples] folder.
+
+Java code to create a diagram:
+
+[source, java, indent=0]
+----
+include::../../test/java/fr/jmini/gitgraph4j/DiagTestUtil.java[tag=createDiagram]
+
+include::../../test/java/fr/jmini/gitgraph4j/AbstractTestCreateDiagram.java[tag=storeFile]
+----
+
+=== Drawio
+
+Out of this the tool is computing the drawio source xml which can then be turn into a svg or a png picture:
+
+image:examples/diag06/graph.drawio.png[]
+
+This is the primary target output of the tool.
+
+=== Mermaid JS
+
+Mermaid JS has a module specialized in drawing link:https://mermaid-js.github.io/mermaid/#/gitgraph[git graphs]. 
+
+The graph corresponding to the previous example would be:
+
+[source, txt]
+----
+include::examples/diag06/graph.mmd[]
+----
+
+Which is rendered like this:
+
+[mermaid]
+....
+include::examples/diag06/graph.mmd[]
+....
+
+Not everything that can be defined in the Java code is properly mapped to the mermaid syntax
+
+=== Dot / Graphviz
+
+The git graph can be turned into a Graphviz file (`*.gv`), written using the DOT description language
+
+The graph corresponding to the previous example would be:
+
+[source, dot]
+----
+include::examples/diag06/graph.gv[]
+----
+
+Which is rendered like this:
+
+[plantuml, format=png]
+....
+include::examples/diag06/graph.gv[]
+....
+
+=== Control commits order
+
+Sometimes you want to control the commits order.
+In this case it is better to add the commits directly to the diagram:
+
+[source, java, indent=0]
+----
+include::../../test/java/fr/jmini/gitgraph4j/DiagramTest.java[tag=createDiagramInOrder]
+----
+
+When the diagram holds all the commits (no other commits added only on one of the contained branches), then no algorithm to sort the commits is applied.
+
+== Download
+
+The code is not hosted on maven central.
+If you want to use it, the best option is to clone the repo and to run it locally.
+
+=== Build
+
+This project is using gradle.
+
+Command to build the sources locally:
+
+----
+./gradlew build
+----
+
+Command to build the documentation page:
+
+----
+./gradlew asciidoctor
+----
+
+The output of this command is an HTML page located at `<git repo root>/build/docs/html5/index.html`.
+
+include::{github-readme}[tags=contact-section]
+
+include::{github-readme}[tags=license-section]
+

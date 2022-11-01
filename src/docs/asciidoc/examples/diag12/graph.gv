@@ -1,0 +1,51 @@
+digraph G {
+    rankdir="LR";
+    bgcolor="white"
+    node[shape=circle; style=filled; fixedsize=true; width=0.25, fontcolor=black, label=""];
+    edge[weight=2, arrowhead=none, color=black];
+
+    node[group="gbox1", color="#6c8ebf"; fillcolor="#dae8fc";];
+    a [label="a"];
+    b [label="b"];
+    c [label="c"];
+    box1[shape=box; style=""; fixedsize=false; label="b1"];
+
+    node[group="gbox2", color="#9673a6"; fillcolor="#e1d5e7";];
+    f [label="f"];
+    g [label="g"];
+    h [label="h"];
+    i [label="i"];
+    j [label="j"];
+    box2[shape=box; style=""; fixedsize=false; label="b2"];
+
+    node[group="gbox3", color="#82b366"; fillcolor="#d5e8d4";];
+    u [label="u"];
+    v [label="v"];
+    w [label="w"];
+    x [label="x"];
+    y [label="y"];
+    z [label="z"];
+    box3[shape=box; style=""; fixedsize=false; label="b3"];
+
+    a -> f
+    f -> g
+    a -> b
+    g -> u
+    u -> v
+    b -> h
+    g -> h
+    b -> c
+    h -> w
+    v -> w
+    w -> x
+    h -> i
+    i -> y
+    x -> y
+    c -> j
+    i -> j
+    j -> z
+    y -> z
+    c -> box1 [style=invis]
+    j -> box2 [style=invis]
+    z -> box3
+}

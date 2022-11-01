@@ -1,0 +1,20 @@
+%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true, 'mainBranchOrder': 1}} }%%
+gitGraph
+     commit id:"a"
+     branch feature_1 order: 0
+     branch feature_2 order: 2
+     checkout feature_1
+     commit id:"f"
+     checkout main
+     commit id:"b"
+     checkout feature_1
+     commit id:"g"
+     checkout feature_2
+     commit id:"u"
+     checkout feature_1
+     commit id:"h"
+     checkout feature_2
+     commit id:"v"
+     checkout main
+     merge feature_1
+     merge feature_2

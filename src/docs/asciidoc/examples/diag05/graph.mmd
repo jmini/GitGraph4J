@@ -1,0 +1,15 @@
+%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true}} }%%
+gitGraph
+     commit id:"z"
+     branch very-long-feature-branch order: 1
+     checkout main
+     commit id:"a"
+     checkout very-long-feature-branch
+     commit id:"f"
+     commit id:"g"
+     checkout main
+     commit id:"b"
+     checkout very-long-feature-branch
+     commit id:"h"
+     checkout main
+     merge very-long-feature-branch

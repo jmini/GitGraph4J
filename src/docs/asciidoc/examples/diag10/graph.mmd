@@ -1,0 +1,35 @@
+%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true, 'mainBranchOrder': 1}} }%%
+gitGraph
+     commit id:"a"
+     branch feature order: 0
+     branch b3 order: 2
+     branch b4 order: 3
+     checkout main
+     commit id:"b"
+     checkout b3
+     commit id:"l"
+     commit id:"m"
+     checkout feature
+     commit id:"f"
+     checkout b4
+     commit id:"u"
+     checkout main
+     commit id:"c"
+     checkout feature
+     commit id:"g"
+     checkout b4
+     commit id:"v"
+     checkout feature
+     merge main
+     checkout main
+     commit id:"d"
+     checkout b3
+     merge main
+     checkout b4
+     merge b3
+     checkout feature
+     merge main
+     checkout b4
+     commit id:"x"
+     checkout b3
+     commit id:"o"

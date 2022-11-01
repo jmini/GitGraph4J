@@ -1,0 +1,28 @@
+%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true, 'mainBranchName': 'b1'}} }%%
+gitGraph
+     commit id:"a"
+     branch b2 order: 1
+     branch b3 order: 2
+     checkout b2
+     commit id:"f"
+     commit id:"g"
+     checkout b1
+     commit id:"b"
+     checkout b3
+     commit id:"u"
+     commit id:"v"
+     checkout b2
+     merge b1
+     checkout b1
+     commit id:"c"
+     checkout b3
+     merge b2
+     commit id:"x"
+     checkout b2
+     commit id:"i"
+     checkout b3
+     merge b2
+     checkout b2
+     merge b1
+     checkout b3
+     merge b2
