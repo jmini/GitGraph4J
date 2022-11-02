@@ -16,17 +16,27 @@
 = {project-name}
 Jeremie Bresson
 
-Java code to create "git graph" images.
+Java code to create "git graph" images (targeting mainly the `Diagrams.net` (`*.drawio` file) output format and supporting `Mermaid` (`*.mmd` file) and `Graphviz` (`*.dot` file) outputs as well).
 
 //end::header[]
 
+image:https://circleci.com/gh/{gh-repo-owner}/{gh-repo-name}.svg?style=svg["CircleCI", link="https://circleci.com/gh/{gh-repo-owner}/{gh-repo-name}"]
+
+**link:https://www.diagrams.net/[Diagrams.net / Draw.io] output:**
+
 image:src/docs/asciidoc/examples/diag03/graph.drawio.png[]
 
-image:https://circleci.com/gh/{gh-repo-owner}/{gh-repo-name}.svg?style=svg["CircleCI", link="https://circleci.com/gh/{gh-repo-owner}/{gh-repo-name}"]
+**link:https://mermaid-js.github.io/mermaid/#/gitgraph[Mermaid] output:**
+
+image:src/docs/asciidoc/examples/diag03/graph.mmd.png[]
+
+**link:https://graphviz.org/[Dot / Graphviz] output:**
+
+image:src/docs/asciidoc/examples/diag03/graph.gv.png[]
 
 == Project Homepage
 
-Visit the link:{homepage}[project home page] to know more about this project.
+Visit the link:{homepage}[project home page] or the link:{homepage}/examples.html[examples page] to know more about this project.
 
 //tag::contact-section[]
 == Get in touch
