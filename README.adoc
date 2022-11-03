@@ -16,7 +16,7 @@
 = {project-name}
 Jeremie Bresson
 
-Java code to create "git graph" images (targeting mainly the `Diagrams.net` (`*.drawio` file) output format and supporting `Mermaid` (`*.mmd` file) and `Graphviz` (`*.dot` file) outputs as well).
+Java code to create "git graph" images (targeting mainly the `Diagrams.net` (`\*.drawio` file) output format and supporting `Mermaid` (`*.mmd` file) and `Graphviz` (`*.dot` file) outputs as well).
 
 //end::header[]
 

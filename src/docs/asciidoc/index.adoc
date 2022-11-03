@@ -33,7 +33,7 @@ Instead of drawing you defines your commits and the branches you would like to h
 
 In addition the tool also supports additional outputs than draw.io.
 
-== Examples pages
+== Examples page
 
 Check the xref:examples.adoc[examples page] to see different possibilities and different outputs.
 
